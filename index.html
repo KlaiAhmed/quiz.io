@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Your Passion Path</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="progress-container">
+        <div id="progress-bar" class="progress-bar"></div>
+    </div>
+    
+    <div class="container">
+        <h1>Finding Your Passion Quiz</h1>
+        <div class="instructions">
+            Instructions: Answer each question, adding up your points as you go. At the end, your total score will help indicate fields that might align with your passion.
+        </div>
+    
+        <div id="quiz">
+            <div class="question">
+                <h2>1. What type of work environment excites you the most?</h2>
+                <button onclick="selectAnswer(this, 3, 0)">a) Fast-paced, high-energy (e.g., technology, finance)</button>
+                <button onclick="selectAnswer(this, 5, 0)">b) Creative and open-ended (e.g., arts, writing, design)</button>
+                <button onclick="selectAnswer(this, 4, 0)">c) Collaborative and service-oriented (e.g., education, healthcare)</button>
+                <button onclick="selectAnswer(this, 2, 0)">d) Analytical and research-focused (e.g., science, engineering)</button>
+            </div>
+            <div class="question">
+                <h2>2. How important is creativity in your work?</h2>
+                <button onclick="selectAnswer(this, 5, 1)">a) Essential; I need it to feel fulfilled</button>
+                <button onclick="selectAnswer(this, 3, 1)">b) Somewhat; I enjoy problem-solving</button>
+                <button onclick="selectAnswer(this, 1, 1)">c) Not very; I prefer structured work</button>
+                <button onclick="selectAnswer(this, 4, 1)">d) Crucial but in technical ways (e.g., engineering, tech design)</button>
+            </div>
+            <div class="question">
+                <h2>3. What kind of impact do you want your work to have?</h2>
+                <button onclick="selectAnswer(this, 4, 2)">a) Social impact; I want to help people directly</button>
+                <button onclick="selectAnswer(this, 5, 2)">b) Innovation; I want to create new things</button>
+                <button onclick="selectAnswer(this, 3, 2)">c) Economic; I want to drive success and growth</button>
+                <button onclick="selectAnswer(this, 2, 2)">d) Knowledge; I want to contribute to scientific understanding</button>
+            </div>
+            <div class="question">
+                <h2>4. How do you prefer to work on projects?</h2>
+                <button onclick="selectAnswer(this, 2, 3)">a) Independently, at my own pace</button>
+                <button onclick="selectAnswer(this, 3, 3)">b) In small teams with shared goals</button>
+                <button onclick="selectAnswer(this, 5, 3)">c) Leading groups to achieve goals</button>
+                <button onclick="selectAnswer(this, 4, 3)">d) Through collaborative and dynamic teamwork</button>
+            </div>
+            <div class="question">
+                <h2>5. What motivates you the most in your work?</h2>
+                <button onclick="selectAnswer(this, 3, 4)">a) Solving complex problems</button>
+                <button onclick="selectAnswer(this, 5, 4)">b) Creating something new and original</button>
+                <button onclick="selectAnswer(this, 4, 4)">c) Supporting others and making a difference</button>
+                <button onclick="selectAnswer(this, 2, 4)">d) Exploring new ideas and information</button>
+            </div>
+            <div class="question">
+                <h2>6. What type of challenges do you enjoy most?</h2>
+                <button onclick="selectAnswer(this, 2, 5)">a) Analytical, data-heavy problems</button>
+                <button onclick="selectAnswer(this, 5, 5)">b) Creative, design-based tasks</button>
+                <button onclick="selectAnswer(this, 4, 5)">c) Social and people-oriented situations</button>
+                <button onclick="selectAnswer(this, 3, 5)">d) Financial or strategic decision-making</button>
+            </div>
+            <div class="question">
+                <h2>7. How much risk are you willing to take in your career?</h2>
+                <button onclick="selectAnswer(this, 5, 6)">a) High risk; I’m okay with uncertainties</button>
+                <button onclick="selectAnswer(this, 3, 6)">b) Moderate risk; I like new opportunities but need some stabilit</button>
+                <button onclick="selectAnswer(this, 1, 6)">c) Low risk; I prefer a stable and secure job</button>
+                <button onclick="selectAnswer(this, 4, 6)">d) Calculated risks; I analyze before taking big steps</button>
+            </div>
+            <div class="question">
+                <h2>8. What type of tasks do you prefer?</h2>
+                <button onclick="selectAnswer(this, 2, 7)">a) Researching and analyzing data</button>
+                <button onclick="selectAnswer(this, 5, 7)">b) Innovating and brainstorming new ideas</button>
+                <button onclick="selectAnswer(this, 3, 7)">c) Organizing and managing projects</button>
+                <button onclick="selectAnswer(this, 4, 7)">d) Helping others and providing solutions</button>
+            </div>
+            <div class="question">
+                <h2>9. Which work outcome is most satisfying to you?</h2>
+                <button onclick="selectAnswer(this, 3, 8)">a) Financial success and career advancement</button>
+                <button onclick="selectAnswer(this, 5, 8)">b) Personal growth and creativity</button>
+                <button onclick="selectAnswer(this, 4, 8)">c) Contributing to a positive change in society</button>
+                <button onclick="selectAnswer(this, 2, 8)">d) Discovering new knowledge or solving mysteries</button>
+            </div>
+            <div class="question">
+                <h2>10. How would you like to be known in your field?</h2>
+                <button onclick="selectAnswer(this, 5, 9)">a) As an innovator and creator</button>
+                <button onclick="selectAnswer(this, 3, 9)">b) As a leader and manager</button>
+                <button onclick="selectAnswer(this, 2, 9)">c) As a researcher or experts</button>
+                <button onclick="selectAnswer(this, 4, 9)">d) As a supporter and helper</button>
+            </div>
+        </div>
+    
+        <button onclick="calculateResult()">See My Results</button>
+    
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        Done by Ahmed KLAI
+    </footer>
+</body>
+</html>

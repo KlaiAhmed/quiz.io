@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background for better contrast */
+    color: #333; /* Dark text color for readability */
+    line-height: 1.6;
+    margin: 0; /* Remove default margin */
+}
+
+.progress-container {
+    position: fixed; /* Fixed position at the top */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width of the screen */
+    background-color: #e0e0e0; /* Light gray background for the progress bar */
+    border-radius: 5px; /* Rounded corners for the progress container */
+    height: 25px; /* Height of the progress bar */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.progress-bar {
+    height: 100%; /* Full height of the progress container */
+    width: 0; /* Start at 0% width */
+    background-color: #4a90e2; /* Color of the progress bar */
+    border-radius: 5px; /* Rounded corners for the progress bar */
+    transition: width 0.3s; /* Smooth transition for the width change */
+}
+
+.container {
+    max-width: 800px;
+    margin: 70px auto; /* Adjust margin to account for fixed progress bar */
+    padding: 20px;
+    background-color: #fff; /* White background for the quiz container */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4a90e2; /* A calming blue color for the title */
+}
+
+.instructions {
+    font-size: 1.1em;
+    margin: 20px 0; /* Adds vertical spacing around the instructions */
+    color: #555; /* Soft gray for better readability */
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #e0e0e0; /* Light border around instructions */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    background-color: #f0f8ff; /* Light blue background for the instructions */
+}
+
+.question {
+    margin: 20px 0; /* Adds spacing between questions */
+    background-color: #e0f7fa; /* Soft cyan background for questions */
+    padding: 15px;
+    border-radius: 5px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+button {
+    display: block; /* Each button takes up full width */
+    width: 100%; /* Full width for buttons */
+    margin: 10px 0; /* Space above and below buttons */
+    padding: 10px;
+    background-color: #2196F3; /* Soft blue background for buttons */
+    color: white; /* White text on buttons */
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth background color change and animation */
+    text-align: left; /* Align button text to the left */
+}
+
+button:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+}
+
+button.selected {
+    background-color: #1976D2; /* Darker blue for selected answers */
+    transform: scale(1.05); /* Slightly enlarge the selected button */
+}
+
+.result {
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #dff0d8; /* Light green background for results */
+    border-radius: 5px; /* Rounded corners for results */
+    text-align: center;
+    color: #3c763d; /* Darker green text color for better readability */
+    display: none; /* Hide result until calculated */
+}
+footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: #888;
+}
